@@ -1,0 +1,91 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 700
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@400;700&family=Titillium+Web:wght@300;400;700&family=Ubuntu&display=swap');
+
+:root{
+  --Grayishblue: hsl(220, 15%, 55%);
+  ---Darkblue: hsl(218, 44%, 22%);
+  --Lightgray: hsl(212, 45%, 89%)
+
+}
+.bodyQrCode{
+  background-color: var(--Lightgray);
+  font-size: 15px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.conteudo{
+  display: flex;
+  align-items: center; /*alinha verticalmente os itens filho dentro do contêiner flex */
+  justify-content: center;/*Isso alinha horizontalmente os itens filho dentro do contêiner flex*/
+  height: 100vh;/* faz com que o contêiner ocupe a altura inteira da janela de visualização, permitindo que o conteúdo seja centralizado verticalmente na página.  (vh significa "viewport height" ou "altura da janela de visualização") */
+  
+  
+}
+
+.content{
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding-top: 21px;
+  padding-bottom: 25px;
+  width: 350px;
+  justify-content: center;
+  display: flex; /* Adicionado */
+  flex-direction: column; /* Essa propriedade define a direção principal do contêiner flex como "column" (coluna). Com essa configuração, os itens filho dentro do contêiner flex são dispostos verticalmente em uma coluna. */
+  align-items: center; /* : Essa propriedade alinha verticalmente os itens filho dentro do contêiner flex no centro do eixo transversal. Neste caso, center faz com que os itens sejam centralizados verticalmente dentro da coluna. */
+}
+.imagem{
+  width: 90%;
+  border-radius: 10px; 
+
+}
+.content h2 {
+  color:var(---Darkblue);
+  display: flex;
+  width: 80%;
+
+}
+.content p{
+  color: var(--Grayishblue);
+  display: flex;
+  width: 75%;
+  font-size: 17px;
+
+}
+
+
+
